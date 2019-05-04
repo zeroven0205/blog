@@ -16,13 +16,13 @@ npm update xxx 更新包
 npm outdated -g --depth=0 要找出需要更新的软件包
 ```
 #### 发布一个 npm 包：
-> 注册 && 查询：https://www.npmjs.com
-> 登录：'npm login'
-> 查询确认成功：'npm whoami'
-> 上传包：'npm publish'
-> 验证邮箱：'npm adduser'
-> 换源：'npm config set registry http://registry.npmjs.org'
-> 更新：修改 version 后 npm publish
+* 注册 && 查询：https://www.npmjs.com
+* 登录：‘npm login’
+* 查询确认成功：npm whoami
+* 上传包：npm publish
+* 验证邮箱：npm adduser
+* 换源：npm config set registry http://registry.npmjs.org
+* 更新：修改 version 后 npm publish
 
 ### cnpm
 cnpm 淘宝镜像，可以看成是 npm 的国内版本，下载 npm 包的速度更快。
