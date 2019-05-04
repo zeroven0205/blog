@@ -36,14 +36,15 @@ npx 会帮你执行依赖包里的二进制文件，引入这个命令的目的�
 
 把原来需要全局安装的包放到项目目录下安装。
 
-old:
 ```
+old:
+
 npm install -g create-react-app
 
 create-react-app my-app
-```
+
 new:
-```
+
 npx create-react-app my-app
 ```
 临时安装 create-react-app 包，命令完成后 create-react-app 会删掉，不会出现在 global 中，下次再执行，还是会重新临时安装。
@@ -57,20 +58,26 @@ nvm 不支持 Windows，但是有替代品，也就是 nvm-windows。
 
 安装 nvm：
 
+```
 wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
+```
 安装完成后关闭终端，重新打开终端输入 nvm 验证一下是否安装成功，当出现“Node Version Manager”时，说明已安装成功。
 
 如果在新的终端输入 nvm 时提示：command not found: nvm，有可能是以下原因之一：
 
 你的系统可能缺少一个 .bash_profile 文件，你可以创建一个此文件（可通过vi或vim命令），打开复制粘贴以下代码（安装nvm成功后终端的最好3行代码）进去，保存，然后再次运行安装命令；
 
+```
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+```
 注意：如果你安装了 oh my zsh ，需要在 .zshrc 文件去添加以上配置信息，（一般安装成功都会自动写入这个文件最底部）。
 
-如果上面没有解决问题，打开你的 .bash_profile 文件，并添加以下代码：
-source ~/.bashrc，更改完记得保存更改。
+如果上面没有解决问题，打开你的 .bash_profile 文件，并添加以下代码（更改完记得保存）：
+```
+source ~/.bashrc
+```
 
 ### 常用命令：
 ```
