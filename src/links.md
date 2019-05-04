@@ -1,5 +1,15 @@
-### day 2019-04-26
 
+
+### day 2019-05-04
+* [私人博客microfrontend](https://alili.tech/tags/microfrontend/)
+* [vue-cli3.0 搭建项目模版教程（ts+vuex+axios）](https://www.jianshu.com/p/44500385abdd)
+* [Webpack 4 配置最佳实践](https://juejin.im/post/5b304f1f51882574c72f19b0)
+* [如何优雅的升级到 webpack4](https://segmentfault.com/a/1190000015576048)
+* [awesome-spider爬虫集合](https://github.com/facert/awesome-spider)
+* [awesome-vue](https://github.com/vuejs/awesome-vue)
+
+
+### day 2019-04-26
 * [jakearchibald.com/2015/tasks-microtasks-queues-and-schedules/](https://jakearchibald.com/2015/tasks-microtasks-queues-and-schedules/)
 * [developers.google.com/web/updates/2018/09/inside-browser-part1](https://developers.google.com/web/updates/2018/09/inside-browser-part1)
 
