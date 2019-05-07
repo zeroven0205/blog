@@ -1,6 +1,13 @@
 
 
 ### day 2019-05-04
+#### 关于lerna--优化了使用Git和NPM管理多包存储库的工作流的工具
+[GitHub_lerna](https://github.com/lerna/lerna)
+[一步步学习如何用Lerna](https://blog.csdn.net/pwc1996/article/details/86559619)
+[]()
+[]()
+
+### day 2019-05-04
 * [私人博客microfrontend](https://alili.tech/tags/microfrontend/)
 * [vue-cli3.0 搭建项目模版教程（ts+vuex+axios）](https://www.jianshu.com/p/44500385abdd)
 * [Webpack 4 配置最佳实践](https://juejin.im/post/5b304f1f51882574c72f19b0)
