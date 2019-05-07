@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="Zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="refresh" content="3;url=https://expo.jiabasha.com/">
+    <title>访问的页面出错了！</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            font-size: 75px;
+        }
+        body {
+            font: .16rem/1.5 'Microsoft Yahei',arial,'宋体';
+        }
+        .error-container {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: absolute;
+            top: 46%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .error-logo {
+            width: 2.28rem;
+            height: 2.547rem;
+            background-image: url('https://s6.tthunbohui.cn/mobile/dist/common/images/error_logo.png');
+            background-position: top center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        .error-text {
+            margin: .6rem 0 .4rem;
+            font-size: .427rem;
+            color: #878787;
+            height: .6rem;
+            line-height: .6rem;
+            text-align: center;
+        }
+        .back-home {
+            border: 1px solid #4a4a4a;
+            border-radius: .053rem;
+            padding: .187rem .653rem;
+            cursor: pointer;
+            color: #4a4a4a;
+            font-size: .427rem;
+            text-decoration: none;
+            line-height: .97rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <div class="error-logo"></div>
+        <div class="error-text">访问的页面出错了！</div>
+        <div class="error-button">
+            <a href="https://expo.jiabasha.com/"
+                class="back-home">回到首页</a>
+        </div>
+    </div>
+</body>
+<script language="javascript" type="text/javascript">
+    // setTimeout(() => {
+    //     window.location.href = 'https://expo.jiabasha.com/'
+    // }, 3000);
+    var htmlStyle = document.getElementsByTagName('html')[0].style;
+    var windowWidth;
+    function handleWindowResize(width) {
+        if (width < 750) {
+            htmlStyle.cssText = `font-size: ${width / 10}px`;
+        } else {
+            htmlStyle.cssText = `font-size: 75px`;
+        }
+    }
+    window.onresize = function() {
+        windowWidth = window.innerWidth;
+        handleWindowResize(windowWidth);
+    }
+    if (/(Android)/i.test(navigator.userAgent)) {
+        windowWidth = screen.width;
+    } else if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+        windowWidth = document.documentElement.clientWidth;
+    }
+    setTimeout(() => {
+        handleWindowResize(windowWidth);
+    }, 1000);
+</script>
+</html>
