@@ -4,7 +4,7 @@
 #### 关于lerna--优化了使用Git和NPM管理多包存储库的工作流的工具
 [GitHub_lerna](https://github.com/lerna/lerna)
 [一步步学习如何用Lerna](https://blog.csdn.net/pwc1996/article/details/86559619)
-[]()
+[小程序技术上走过这些「坑」——小打卡](https://mp.weixin.qq.com/s/Pf3_swwUCx_0vzUIytFn7w)
 []()
 
 ### day 2019-05-04
