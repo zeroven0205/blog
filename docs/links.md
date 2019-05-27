@@ -1,5 +1,8 @@
 
 
+### day 2019-05-27
+* [awesome-web-dev-books](https://github.com/jobbole/awesome-web-dev-books)
+
 ### day 2019-05-04
 #### 关于lerna--优化了使用Git和NPM管理多包存储库的工作流的工具
 [GitHub_lerna](https://github.com/lerna/lerna)
