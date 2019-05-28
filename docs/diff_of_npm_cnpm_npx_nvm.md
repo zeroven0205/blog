@@ -89,3 +89,5 @@ nvm current                 查看当前版本
 nvm use v10.14.0            切换node版本
 nvm alias default v10.14.0  设置默认版本
 ```
+
+[摘抄自：](https://segmentfault.com/a/1190000017912585)
