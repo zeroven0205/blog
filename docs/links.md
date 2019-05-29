@@ -1,16 +1,15 @@
 
 
-### day 2019-05-27
+### 2019-05-27
 * [awesome-web-dev-books](https://github.com/jobbole/awesome-web-dev-books)
 
-### day 2019-05-04
+### 2019-05-06
 #### 关于lerna--优化了使用Git和NPM管理多包存储库的工作流的工具
-[GitHub_lerna](https://github.com/lerna/lerna)
-[一步步学习如何用Lerna](https://blog.csdn.net/pwc1996/article/details/86559619)
-[小程序技术上走过这些「坑」——小打卡](https://mp.weixin.qq.com/s/Pf3_swwUCx_0vzUIytFn7w)
-[]()
+* [GitHub_lerna](https://github.com/lerna/lerna)
+* [一步步学习如何用Lerna](https://blog.csdn.net/pwc1996/article/details/86559619)
+* [小程序技术上走过这些「坑」——小打卡](https://mp.weixin.qq.com/s/Pf3_swwUCx_0vzUIytFn7w)
 
-### day 2019-05-04
+### 2019-05-04
 * [私人博客microfrontend](https://alili.tech/tags/microfrontend/)
 * [vue-cli3.0 搭建项目模版教程（ts+vuex+axios）](https://www.jianshu.com/p/44500385abdd)
 * [Webpack 4 配置最佳实践](https://juejin.im/post/5b304f1f51882574c72f19b0)
@@ -19,7 +18,7 @@
 * [awesome-vue](https://github.com/vuejs/awesome-vue)
 
 
-### day 2019-04-26
+### 2019-04-26
 * [jakearchibald.com/2015/tasks-microtasks-queues-and-schedules/](https://jakearchibald.com/2015/tasks-microtasks-queues-and-schedules/)
 * [developers.google.com/web/updates/2018/09/inside-browser-part1](https://developers.google.com/web/updates/2018/09/inside-browser-part1)
 
