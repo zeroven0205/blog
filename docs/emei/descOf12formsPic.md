@@ -1,7 +1,3 @@
-### 峨眉临济宗孙胜堂演示峨眉十二庄
-> [孙胜堂_天字庄](https://tv.sohu.com/v/dXMvMTEyNTAzNDcxLzYxMjA3NTM5LnNodG1s.html)
-> [孙胜堂_大字庄](https://tv.sohu.com/v/dXMvMTEyNTAzNDcxLzYxMjkzODE1LnNodG1s.html)
-
 ### 十二庄图解品解释
 ![十二庄图解](./img/emeishierzhuangpingjietu.jpg)
 *  十二庄图，讲动静功修练。其排列顺序是：天地之心，龙鹤风云、大小幽明。练功的人手途径，始于道家而归于佛家的四智如来境界。

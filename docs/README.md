@@ -29,4 +29,4 @@
 * [markdown](./markdown.md)
 * [浏览器渲染原理](./浏览器渲染原理.md)
 * [links](./links.md)
-* [峨眉十二庄图解品释解](./峨眉十二庄图解品释解.md)
+* [峨眉十二庄图解品释解](./emei/emei12forms.md)
