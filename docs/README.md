@@ -2,7 +2,7 @@
 ```
 我是谁？我来到这个世界要干什么？我的使命是什么？我的人生价值和追求是什么？
 
-我是父母的儿子，兄弟的弟兄，朋友们的友朋，公司同事的合作人，团队组员们的大师兄...
+我是父母的儿子，兄弟的弟兄，朋友的友朋，公司同事的合作人，团队组员们的唐僧...
 
 这是一个离开谁也不能生存的协同合作的社会，也是一个离开了谁也仍可以活着且能活的生龙活虎、虎虎生威的社会
 
@@ -19,7 +19,13 @@
 
 ```
 
+
+
+
+
+
 ### Good good study, day day up
+* [vueconf](./vueconf.md)
 * [closure_example](./closure_example.md)
 * [closure_package](./closure_package.md)
 * [codding_with_Nuxt](./codding_with_Nuxt.md)
