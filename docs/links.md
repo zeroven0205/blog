@@ -56,7 +56,7 @@
 * [github.com/zz570557024/vue-mpvue-ChatRobot](https://github.com/zz570557024/vue-mpvue-ChatRobot)
 
 
-#### 面试候选人
+#### resume
 * [github.com/zf2014](https://github.com/zf2014)
 * [github.com/macisi](https://github.com/macisi)
 * [github.com/search?p=5&q=mpvue&type=Repositories](https://github.com/search?p=5&q=mpvue&type=Repositories)
