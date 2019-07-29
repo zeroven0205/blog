@@ -25,6 +25,7 @@
 
 
 ### Good good study, day day up
+* [performance_optimization](./performance_optimization.md)
 * [vueconf](./vueconf.md)
 * [closure_example](./closure_example.md)
 * [closure_package](./closure_package.md)

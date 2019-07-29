@@ -1,4 +1,4 @@
-## 浏览器渲染原理
+## 浏览器渲染原理 ———— Principle of browser rendering
 
 > 浏览器的内核分为两个部分：渲染引擎、JS引擎。渲染引擎在不同的浏览器中也不是都相同的。比如在 Firefox 中叫做 Gecko，在 Chrome 和 Safari 中都是基于 WebKit 开发的。本文我们主要介绍关于 WebKit 的这部分渲染引擎内容以及几个相关的问题。
 
