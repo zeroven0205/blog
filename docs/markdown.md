@@ -1,5 +1,18 @@
 
-## Markdown 
+## fed组件库的规范、规划
+- 规范：命名、export、import的方式
+- 规划：职能划分 
+-  hbh-pc 专用于PC端
+-  eslint、ES6的语法，杜绝ES5、ES6共存的方式，抽象的能力，设计模式的问题
+-  
+-  
+
+hbh-widget
+
+
+
+
+
 
 #### 标题
 # 一级标题

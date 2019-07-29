@@ -1,7 +1,18 @@
+### Web Links
 
+### 2019-06-08
+* [收藏交易网](https://www.cang.com/search?type=0&attr=2064&q=&index=2&c1=1)
+* [TC39_262](https://github.com/tc39/test262)
+* []()
 
-### 2019-05-27
-* [awesome-web-dev-books](https://github.com/jobbole/awesome-web-dev-books)
+### 2019-05-29 
+#### Events 相关
+* [DOM0,DOM2,DOM3事件](https://www.cnblogs.com/diligenceday/p/4175721.html)
+* [javascript事件机制底层实现原理](https://www.cnblogs.com/yexiaochai/p/3477715.html)
+* [叶小钗](https://github.com/yexiaochai)
+* [Vue事件解读](https://www.vue-js.com/topic/5877bf0ea9c1282817afc011)
+* []()
+* [如何分析页面加载慢](https://www.jianshu.com/p/24b93b13e5a9)
 
 ### 2019-05-06
 #### 关于lerna--优化了使用Git和NPM管理多包存储库的工作流的工具
@@ -14,6 +25,7 @@
 * [vue-cli3.0 搭建项目模版教程（ts+vuex+axios）](https://www.jianshu.com/p/44500385abdd)
 * [Webpack 4 配置最佳实践](https://juejin.im/post/5b304f1f51882574c72f19b0)
 * [如何优雅的升级到 webpack4](https://segmentfault.com/a/1190000015576048)
+* [awesome-web-dev-books](https://github.com/jobbole/awesome-web-dev-books)
 * [awesome-spider爬虫集合](https://github.com/facert/awesome-spider)
 * [awesome-vue](https://github.com/vuejs/awesome-vue)
 
