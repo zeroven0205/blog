@@ -33,6 +33,6 @@
 * [diff_of_npm_cnpm_npx_nvm](./diff_of_npm_cnpm_npx_nvm.md)
 * [nuxt_issue](./nuxt_issue.md)
 * [markdown](./markdown.md)
-* [浏览器渲染原理](./浏览器渲染原理.md)
+* [浏览器渲染原理](./principle_of_browser_rendering.md)
 * [links](./links.md)
 * [峨眉十二庄](./emei/emei12forms.md)
