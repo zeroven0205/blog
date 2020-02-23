@@ -5,6 +5,6 @@
 
 npm run install 
 
-yarn docs:dev
-
 yarn docs:build
+
+yarn docs:dev
