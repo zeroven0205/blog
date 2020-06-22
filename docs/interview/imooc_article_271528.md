@@ -431,61 +431,85 @@ JavaScript对象是通过引用来传递的，我们创建的每个新对象实�
  
 ```
 方法二：
-```javascript        var arr = [1,2,3,4,5,6,7,8,9,10];        function randSort2(arr){            var mixedArray = [];            while(arr.length > 0){                var randomIndex = parseInt(Math.random()*arr.length);
-                mixedArray.push(arr[randomIndex]);
-                arr.splice(randomIndex, 1);
-            }            return mixedArray;
-        }
-        console.log(randSort2(arr));
+```javascript        
+  var arr = [1,2,3,4,5,6,7,8,9,10];        
+  function randSort2(arr){            
+    var mixedArray = [];            
+    while(arr.length > 0){                
+      var randomIndex = parseInt(Math.random()*arr.length);
+      mixedArray.push(arr[randomIndex]);
+      arr.splice(randomIndex, 1);
+    }            
+    return mixedArray;
+  }
+  console.log(randSort2(arr));
  
 ```
 方法三：
-```javascript        var arr = [1,2,3,4,5,6,7,8,9,10];
-        arr.sort(function(){            return Math.random() - 0.5;
-        })
-        console.log(arr);
+```javascript
+   var arr = [1,2,3,4,5,6,7,8,9,10];
+    arr.sort(function(){            
+        return Math.random() - 0.5;
+    })
+    console.log(arr);
+```
 4.Javascript如何实现继承？
 
 1、构造继承2、原型继承3、实例继承4、拷贝继承
 
 原型prototype机制或apply和call方法去实现较简单，建议使用构造函数与原型混合方式。
-```javascript        function Parent(){            this.name = 'wang';
-        }        function Child(){            this.age = 28;
-        }
-        Child.prototype = new Parent();//继承了Parent，通过原型
+```javascript        
+function Parent(){            
+  this.name = 'wang';
+}        
+function Child(){            
+  this.age = 28;
+}
+Child.prototype = new Parent();//继承了Parent，通过原型
 
-        var demo = new Child();
-        alert(demo.age);
-        alert(demo.name);//得到被继承的属性
+var demo = new Child();
+alert(demo.age);
+alert(demo.name);//得到被继承的属性
+
 5.javascript创建对象的几种方式？
 
-javascript创建对象简单的说,无非就是使用内置对象或各种自定义对象，当然还可以用JSON；但写法有很多种，也能混合使用。1、对象字面量的方式
+javascript创建对象简单的说,无非就是使用内置对象或各种自定义对象，当然还可以用JSON；但写法有很多种，也能混合使用。
+1、对象字面量的方式
 
-    person={firstname:"Mark",lastname:"Yun",age:25,eyecolor:"black"};2、用function来模拟无参的构造函数    function Person(){}    var person=new Person();//定义一个function，如果使用new"实例化",该function可以看作是一个Class
+    person={firstname:"Mark",lastname:"Yun",age:25,eyecolor:"black"};
+    
+    2、用function来模拟无参的构造函数    function Person(){}    var person=new Person();//定义一个function，如果使用new"实例化",该function可以看作是一个Class
     person.name="Mark";
     person.age="25";
     person.work=function(){
     alert(person.name+" hello...");
     }
-    person.work();3、用function来模拟参构造函数来实现（用this关键字定义构造的上下文属性）    function Pet(name,age,hobby){       this.name=name;//this作用域：当前对象
+    person.work();
+    
+    3、用function来模拟参构造函数来实现（用this关键字定义构造的上下文属性）    function Pet(name,age,hobby){       this.name=name;//this作用域：当前对象
        this.age=age;       this.hobby=hobby;       this.eat=function(){
           alert("我叫"+this.name+",我喜欢"+this.hobby+",是个程序员");
        }
     }    var maidou =new Pet("麦兜",25,"coding");//实例化、创建对象
-    maidou.eat();//调用eat方法4、用工厂方式来创建（内置对象）     var wcDog =new Object();
+    maidou.eat();//调用eat方法
+
+    4、用工厂方式来创建（内置对象）     var wcDog =new Object();
      wcDog.name="旺财";
      wcDog.age=3;
      wcDog.work=function(){
        alert("我是"+wcDog.name+",汪汪汪......");
      }
-     wcDog.work();5、用原型方式来创建    function Dog(){
+     wcDog.work();
+
+     5、用原型方式来创建    function Dog(){
 
      }
      Dog.prototype.name="旺财";
      Dog.prototype.eat=function(){
      alert(this.name+"是个吃货");
      }     var wangcai =new Dog();
-     wangcai.eat();5、用混合方式来创建    function Car(name,price){      this.name=name;      this.price=price; 
+     wangcai.eat();
+     6、用混合方式来创建    function Car(name,price){      this.name=name;      this.price=price; 
     }
      Car.prototype.sell=function(){
        alert("我是"+this.name+"，我现在卖"+this.price+"万元");

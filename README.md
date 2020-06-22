@@ -3,7 +3,9 @@
 
 ### 本地启动
 
-npm run install 
+yarn add vuepress -D
+
+或者：npm install 
 
 yarn docs:build
 

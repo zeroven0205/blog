@@ -2,10 +2,10 @@
 
 > 浏览器的内核分为两个部分：渲染引擎、JS引擎。渲染引擎在不同的浏览器中也不是都相同的。比如在 Firefox 中叫做 Gecko，在 Chrome 和 Safari 中都是基于 WebKit 开发的。本文我们主要介绍关于 WebKit 的这部分渲染引擎内容以及几个相关的问题。
 
-![浏览器渲染原理](./img/browserender/63918611gy1fz0f9p169ej21940d6jv9.jpg)
+![浏览器渲染原理](../img/browserender/63918611gy1fz0f9p169ej21940d6jv9.jpg)
 
 ### 浏览器工作流程大体
-![浏览器工作流程大体](./img/browserender/63918611gy1fz0f9ptbnvj20jl06bgpo.jpg)
+![浏览器工作流程大体](../img/browserender/63918611gy1fz0f9ptbnvj20jl06bgpo.jpg)
 
 浏览器工作流程大体分为如下三部分：
 #### 1）浏览器会解析三个东西：
@@ -24,7 +24,7 @@
 ## 构建DOM
 
 浏览器会按照一定步骤将HTML 文件转换为 DOM 树。宏观上，可以分为如下图几个步骤：
-![转换步骤](./img/browserender/63918611gy1fz0f9q8s4mj20hb02g3z2.jpg)
+![转换步骤](../img/browserender/63918611gy1fz0f9q8s4mj20hb02g3z2.jpg)
 
 * 浏览器从磁盘或网络读取HTML的原始字节，并根据文件的指定编码（例如 UTF-8）将它们转换成字符串。
 在网络中传输的是 0 和 1 的字节数据，当浏览器接收到这些字节数据以后，会将它们转换为字符串（也就是我们写的代码）。
@@ -33,7 +33,7 @@
 问题来了，节点与节点之间的关系如何维护？
 
 事实上，这是Token标识的作用————标识“起始标签”和“结束标签”，同时也有子父层级的关系。例如“title”Token的起始标签和结束标签之间的节点肯定是属于“head”的子节点。
-![节点之间的关](./img/browserender/63918611gy1fz0f9qmi5rj20in04owfn.jpg)
+![节点之间的关](../img/browserender/63918611gy1fz0f9qmi5rj20in04owfn.jpg)
 
 上图给出了节点之间的关系，例如：“Hello”Token位于“title”开始标签与“title”结束标签之间，表明“Hello”Token是“title”Token的子节点。同理“title”Token是“head”Token的子节点。
 
@@ -57,7 +57,7 @@
 ``` 
 
 该段HTML会解析为：
-![](./img/browserender/63918611gy1fz0f9r3xcvj20d008k0vq.jpg)
+![](../img/browserender/63918611gy1fz0f9r3xcvj20d008k0vq.jpg)
 
 
 ### 构建CSSOM
@@ -66,7 +66,7 @@ DOM会捕获页面的内容，但浏览器还需要知道页面如何展示，�
 
 构建CSSOM的过程与构建DOM的过程非常相似，当浏览器接收到一段CSS，浏览器首先要做的是识别出Token，然后构建节点并生成CSSOM。
 
-![](./img/browserender/63918611gy1fz0f9rpjfgj20iv02d74w.jpg)
+![](../img/browserender/63918611gy1fz0f9rpjfgj20iv02d74w.jpg)
 
 在这一过程中，浏览器会确定下每一个节点的样式到底是什么。这一过程非常消耗资源：因为可以自行给某个节点设置样式，也可以通过继承获得。在这过程中，浏览器得递归遍历 CSSOM 树，然后确定具体的每一个元素到底是什么样式。
 
@@ -77,7 +77,7 @@ DOM会捕获页面的内容，但浏览器还需要知道页面如何展示，�
 
 当我们生成 DOM 树和 CSSOM 树以后，就需要将这两棵树组合为渲染树。
 
-![](./img/browserender/63918611gy1fz0f9sch0cj20j509341m.jpg)
+![](../img/browserender/63918611gy1fz0f9sch0cj20j509341m.jpg)
 
 在这一过程中，不是简单的将两者合并就行了。渲染树只会包括需要显示的节点和这些节点的样式信息，如果某个节点是 display: none 的，那么就不会在渲染树中显示。
 
@@ -106,7 +106,7 @@ JS文件不只是阻塞DOM的构建，它会导致CSSOM也阻塞DOM的构建。
 这是因为JavaScript不只是可以改DOM，它还可以更改样式，也就是它可以更改CSSOM。前面我们介绍，不完整的CSSOM是无法使用的，但JavaScript中想访问CSSOM并更改它，那么在执行JavaScript时，必须要能拿到完整的CSSOM。所以就导致了一个现象，如果浏览器尚未完成CSSOM的下载和构建，而我们却想在此时运行脚本，那么浏览器将延迟脚本执行和DOM构建，直至其完成CSSOM的下载和构建。也就是说，在这种情况下，浏览器会先下载和构建CSSOM，然后再执行JavaScript，最后再继续构建DOM。
 
 ### 问题二：回流和重绘
-![](./img/browserender/63918611gy1fz0f9syl8ij20g407dmzu.jpg)
+![](../img/browserender/63918611gy1fz0f9syl8ij20g407dmzu.jpg)
 
 众所周知，当网页生成的时候，至少会渲染一次。在用户访问的过程中，还会不断重新渲染。重新渲染会重复上图中的第四步(回流)+第五步(重绘)或者只有第五个步(重绘)。
 
@@ -125,11 +125,11 @@ JS文件不只是阻塞DOM的构建，它会导致CSSOM也阻塞DOM的构建。
 计算 offsetWidth 和 offsetHeight 属性
 设置 style 属性的值
 
-![](./img/browserender/63918611gy1fz0f9tkm52j20g90bd74k.jpg)
+![](../img/browserender/63918611gy1fz0f9tkm52j20g90bd74k.jpg)
 
 #### 2）常见引起重绘属性和方法
 
-![](./img/browserender/63918611gy1fz0f9tw382j20fe06jq2z.jpg)
+![](../img/browserender/63918611gy1fz0f9tw382j20fe06jq2z.jpg)
 
 下面例子中，触发了几次回流和重绘？
 
@@ -168,7 +168,7 @@ CSS 选择符从右往左匹配查找，避免节点层级过多
 
 接下来我们对比下 defer 和 async 属性的区别：
 
-![](./img/browserender/63918611gy1fz0f9urs3tj20j5034gls.jpg)
+![](../img/browserender/63918611gy1fz0f9urs3tj20j5034gls.jpg)
 
 其中蓝色线代表JavaScript加载；红色线代表JavaScript执行；绿色线代表 HTML 解析。
 
@@ -201,7 +201,7 @@ FOUC：由于浏览器渲染机制（比如firefox），再CSS加载之前，先
 
 ### 总结
 
-![](./img/browserender/63918611gy1fz0f9vhxgjj20jt05fdjg.jpg)
+![](../img/browserender/63918611gy1fz0f9vhxgjj20jt05fdjg.jpg)
 
 浏览器工作流程：构建DOM -> 构建CSSOM -> 构建渲染树 -> 布局 -> 绘制。
 CSSOM会阻塞渲染，只有当CSSOM构建完毕后才会进入下一个阶段构建渲染树。

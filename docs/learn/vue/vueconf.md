@@ -6,6 +6,15 @@
 #### Vue 3.0进展
 * 设计目标
 * 更快：最小化操作
+路由：vue-router
+状态管理：vuex
+构建工具脚手架：vue-cli
+开发者工具：vue-devtools
+IDE 支持：VSCode + Vetur
+静态检查：ESLint + eslint-plugin-vue
+单元测试：Jest + vue-jest + vue-test-utils
+文档/静态站生成：VuePress
+
 Object.defineProperty -> Proxy 对象结构的改变
 virtual DOM ———— 抽象层：核心价值，纯JS描述界面渲染成什么样的表达力，代价是几乎整个都要重新创建，每个组件内部便利整个数
 JSX，时间分片
@@ -17,6 +26,7 @@ Vue所特有的：
 Block tree ===“区块树”
 更新性能由与模版整体大小相关提升为与动态内容的数量相关
 benchmark
+
 
 
 TypeScript
