@@ -27,29 +27,17 @@
 不负本心、不枉今生、不虚此行
 ```
 
-### Markdown语法
-* **这是加粗的文字**
-* *这是倾斜的文字*`
-* ***这是斜体加粗的文字***
-* ~~这是加删除线的文字~~
->这是引用的内容
->>这是引用的内容
->>>>>这是引用的内容
----
-----
-***
-*****
 
 ### Good good study, day day up
-* [performance_optimization](./learn/performance_optimization.md)
 * [vueconf](./learn/vue/vueconf.md)
+* [nuxt_issue](./learn/nuxt_issue.md)
+* [codding_with_Nuxt](./learn/codding_with_Nuxt.md)
+* [design_pattern](./learn/design_pattern.md)
 * [closure_example](./learn/closure_example.md)
-* [closure_package](./closure_package.md)
-* [codding_with_Nuxt](./codding_with_Nuxt.md)
-* [design_pattern](./design_pattern.md)
-* [diff_of_npm_cnpm_npx_nvm](./diff_of_npm_cnpm_npx_nvm.md)
-* [nuxt_issue](./nuxt_issue.md)
-* [markdown](./markdown.md)
-* [浏览器渲染原理](./principle_of_browser_rendering.md)
-* [links](./links.md)
+* [closure_package](./learn/closure_package.md)
+* [performance_optimization](./learn/performance_optimization.md)
+* [diff_of_npm_cnpm_npx_nvm](./learn/diff_of_npm_cnpm_npx_nvm.md)
+* [浏览器渲染原理](./learn/principle_of_browser_rendering.md)
 * [峨眉十二庄](./emei/emei12forms.md)
+* [markdown](./markdown.md)
+* [links](./links.md)
