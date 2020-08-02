@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let target = {
+        _name:"小明",
+        age: 15     
+    }
+
+    let handler = {
+        get:(target,test,property) => {
+            if(name in target){
+                cosnole.log("success");                               
+            }else{
+                console.log("error")
+            }
+            return Reflect.get(target,name,property);
+                
+        },
+        set:(target,name,value,property) => {
+            if(typeof value != "number"){
+                console.log("error");
+                throw new TypeError('The age is not an integer');
+            }else{
+                console.log("success");
+                return Reflect.set(target,name,value,property);
+            }
+        },
+        has:(target,key) => {
+            return !(key[0] != "_")
+        }
+    }
+
+    let pro = new Proxy(target,handler);
+
+    console.log("_name" in pro);
+    //打印结果为 true
+
+    console.log("age" in pro);
+    //打印结果为false
+
+    // pro.age = 35;
+    // //结果为 success，并且返回修改值
+
+    // pro.age = "12";
+    // //结果为error，抛出错误
+
+    </script>
+</body>
+</html>
