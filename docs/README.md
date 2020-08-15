@@ -29,6 +29,7 @@
 
 
 ### Good good study, day day up
+* [PaddlePaddle飞桨尝鲜](./paddle/first_weekPaddlePaddle.md)
 * [vueconf](./learn/vue/vueconf.md)
 * [nuxt_issue](./learn/nuxt_issue.md)
 * [codding_with_Nuxt](./learn/codding_with_Nuxt.md)
