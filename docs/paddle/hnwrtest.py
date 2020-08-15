@@ -49,6 +49,7 @@ def load_image(img_path):
 with fluid.dygraph.guard():
     model = MNIST()
     params_file_path = 'mnist'
+    # TODO here image path changes,diff from paddle platform
     img_path = './work/example_0.png'
 # 加载模型参数
     model_dict, _ = fluid.load_dygraph("mnist")
